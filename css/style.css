@@ -1,6 +1,6 @@
 *{margin:0; padding:0; box-sizing:border-box;}
 img{width:100%;}
-
+body{font-family:'Lato', sans-serif;}
 /* MENU */
 #welcome{font-size:.7em; cursor: pointer; display: none; font-weight: bold; padding: 1em; text-align:center; text-transform: uppercase; color:#fff; background:rgba(47,52,141,.9);}
 #welcome::before{content: attr(data-content) 'X'; color:#fff; right:15px; position: absolute; cursor: pointer;}
