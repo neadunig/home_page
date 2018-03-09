@@ -17,7 +17,7 @@ body{font-family:'Lato', sans-serif;}
 
 /* SLIDE */
 .slide{height:auto; min-height: 680px; position: relative; top:-67px; display: flex; flex-direction: column; justify-content: center; align-items: center;  
-background: url('../images/bkg-educacao.png') no-repeat; background-size: cover; border-top:3px solid rgba(27,32,97,1);}
+background: url('../images/bkg-educacao.png') no-repeat; background-attachment: fixed; background-size: cover; border-top:3px solid rgba(27,32,97,1);}
 
 /* .slide:before{
     content: "";
