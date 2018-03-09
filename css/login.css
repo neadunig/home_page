@@ -5,7 +5,7 @@ body{font-family:'Lato', sans-serif; background: url('../images/bkg-login-aluno.
 .logo{width: 50%; cursor: pointer; margin:0 auto; display: block;}
 
 #backpage:before{
-    content: "";
+    
     width: 25px;
     height: 25px;
     background: url('../images/icons/left-arrow.svg') no-repeat center center;
