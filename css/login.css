@@ -1,7 +1,114 @@
 *{margin:0; padding:0; box-sizing: border-box;}
 img{width: 100%;}
-body{font-family:'Lato', sans-serif;}
+html, body{overflow:hidden;}
+body{font-family:'Lato', sans-serif; background: url('../images/bkg-login-aluno.png') 20% 15%; background-size: cover;}
+.logo{width: 50%; cursor: pointer; margin:0 auto; display: block;}
 
-.container{
-    
+#backpage:before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: url('../images/icons/left-arrow.svg') no-repeat center center;
+    background-size: cover;
+    display: block;
+    margin:10px;
+    cursor: pointer;
+}
+#backpage a{width:25px; height:25px; display: block; position: relative; top:-35px; left:15px;}
+
+.wrap{
+    width: 70%;
+    margin:70px auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-login{
+  width:40%;
+  padding:1em;
+  display:flex;
+  justify-content:flex-end;
+  flex-direction:column;
+}
+
+.inputs{
+  padding:1em;
+  font-size:1em;
+  boder:1px solid #637381;
+  margin-bottom:10px;
+  color:#637381;
+}
+
+.inputs:focus{
+  border:2px solid rgba(27, 32, 97, 1);
+  outline:none;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom:30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color:#fff;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: rgba(47,52,141,1.00);;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.btn{
+  background:rgba(47,52,141,1.00);;
+  padding:1em;
+  border:0;
+  border-radius:5px;
+  border-bottom:5px solid rgba(27, 32, 97, 1);
+  color:#fff;
+  font-size:1em;
+  cursor:pointer;
 }
