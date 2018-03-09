@@ -2,20 +2,21 @@
 img{width:100%;}
 body{font-family:'Lato', sans-serif;}
 /* MENU */
+
 #welcome{font-size:.7em; cursor: pointer; display: none; font-weight: bold; padding: 1em; text-align:center; text-transform: uppercase; color:#fff; background:rgba(47,52,141,.9);}
 #welcome::before{content: attr(data-content) 'X'; color:#fff; right:15px; position: absolute; cursor: pointer;}
-.menu{width:100%; display: flex; justify-content: space-around; align-items: center;}
+.menu{width:100%; display: flex; padding:.3em; justify-content: space-around; align-items: center; z-index: 1; position: relative;}
 .logo{width: 90px; cursor: pointer;}
 .logo a{text-decoration: none; border:0;}
 .list-menu{display: block;}
 .list-menu li{list-style: none; padding:.7em; display:inline-block;}
 .list-menu a:hover{border-bottom:2px solid rgba(47,52,141,1.00);}
 .list-menu a{font-size:.7em; font-weight: 700; text-transform: uppercase; color:#fff; text-decoration:none;}
-.list-menu li:last-child{background: rgba(47,52,141,1); border-bottom:3px solid rgba(27, 32, 97, 1);
+.list-menu li:last-child{background: rgba(47,52,141,1); line-height: 25px; border-bottom:3px solid rgba(27, 32, 97, 1);
 }
 
 /* SLIDE */
-.slide{height:auto; min-height: 680px; position: relative; top:-68px; z-index: -1; display: flex; flex-direction: column; justify-content: center; align-items: center;  
+.slide{height:auto; min-height: 680px; position: relative; top:-67px; display: flex; flex-direction: column; justify-content: center; align-items: center;  
 background: url('../images/bkg-educacao.png') no-repeat; background-size: cover; border-top:3px solid rgba(27,32,97,1);}
 
 /* .slide:before{
@@ -31,7 +32,7 @@ background: url('../images/bkg-educacao.png') no-repeat; background-size: cover;
 
 } */
 
-.slide-title{font-size:2em; color:#fff; width: 800px; text-transform: uppercase; font-weight:900; line-height: 1; letter-spacing: -1px;}
+.slide-title{text-shadow:3px 1px 0px rgba(27, 32, 97, 1); font-size:2em; color:#fff; width: 800px; text-transform: uppercase; font-weight:900; line-height: 1; letter-spacing: -1px;}
 .slide-desc{color:#ebebeb; margin-top:20px; font-weight:300;}
-.btn-insc{width:20%; margin-top:100px; font-size:1em; letter-spacing: 2px; font-weight:800; text-transform:uppercase; color:#fff;
-    background:rgba(47,52,141,1); padding:1em; border:0; border-bottom:3px solid rgba(27,32,97,1); cursor: pointer;}
+.btn-insc{width:20%; cursor: pointer; margin-top:100px; font-size:1em; letter-spacing: 2px; font-weight:800; text-transform:uppercase; color:#fff;
+    background:rgba(47,52,141,1); padding:1em; border:0; border-bottom:3px solid rgba(27,32,97,1);}
