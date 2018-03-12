@@ -16,18 +16,16 @@
 <span class="teste"></span>
 <!-- Localização Aluno -->
 <div class="location">
-  <div class="banner-location">
-  <!-- <img src="./images/bkg-educacao.png" alt=""> -->
-  </div>
+  <div class="banner-location"></div>
   <!-- location -->
   <div class="button-location">
     <img src="./images/logo-eadb.svg" alt="">
     <select name="localizacao" id="location-select">
       <option value="0">Selectione o seu estado</option>
-      <option value="1">Rio de Janeiro</option>
-      <option value="2">São Paulo</option>
+      <option value="riodejaneiro">Rio de Janeiro</option>
+      <option value="saopaulo">São Paulo</option>
     </select>
-    <button class="btn-location">Continuar</button>
+    <button type="submit" class="btn-location">Continuar</button>
   </div><!-- button-location -->
 </div><!-- location -->
 
@@ -65,15 +63,22 @@
 
 <script>
   $(window).each(function(){
+
+    // EXIBE O MODAL LOCATION
+    setTimeout(() => {
+      $('.location, .teste').stop().fadeIn();
+    }, 5000);
+    
+    //FECHA O MODAL LOCATION CLICK NO MOUSE
     $('.teste').click(function(event){
       if(event.target){
-        $('.location, .teste').fadeOut(1000);
+        $('.location, .teste').stop().fadeOut("slow");
       }
     });
+    
 
-    setTimeout(() => {
-      $('.location, .teste').css("display","none");
-    }, 1000); // 14000 melhor
+    $('.location, .teste').css("display", "none");
+
   });
 </script>
 </html>
