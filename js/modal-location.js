@@ -1,14 +1,15 @@
 $(window).each(function(){
   // EXIBE O MODAL LOCATION
   setTimeout(() => {
-    $('.location, .teste').stop().fadeIn();
+    $('.location, .fundo-slide').stop().fadeIn();
   }, 5000);
   
   //FECHA O MODAL LOCATION CLICK NO MOUSE
-  $('.teste').click(function(event){
+  $('.fundo-slide').click(function(event){
     if(event.target){
-      $('.location, .teste').stop().fadeOut("slow");
+      $('.location, .fundo-slide').stop().fadeOut("slow");
     }
   });
-  $('.location, .teste').css("display", "none");
+  $('.location, .fundo-slide').css("display", "none");
 });
+
